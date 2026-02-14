@@ -75,8 +75,8 @@
     <LibraryPath>C:\Users\Windows\Desktop\Umng\computacion\Computacion Grafia\Proyect OpneGL\openGL-1\Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\Windows\Desktop\Umng\computacion\Computacion Grafia\Proyect OpneGL\openGL-1\Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Windows\Desktop\Umng\computacion\Computacion Grafia\Proyect OpneGL\openGL-1\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Estudiante\Documents\Kevin\OpenGL\Libraries\include;C:\Users\Windows\Desktop\Umng\computacion\Computacion Grafia\Proyect OpneGL\openGL-1\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Estudiante\Documents\Kevin\OpenGL\Libraries\lib;C:\Users\Windows\Desktop\Umng\computacion\Computacion Grafia\Proyect OpneGL\openGL-1\Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
