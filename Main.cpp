@@ -4,41 +4,38 @@
 
 int main()
 {
-    // Inicializar GLFW
-    glfwInit();
+    glfwInit(); // Inicializa la librería GLFW
 
-    // Decirle a GLFW qué versión de OpenGL estamos usando (en este caso 3.3)
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); // Información sobre la versión y el perfil a usar
 
-    // Decirle a GLFW que usaremos el perfil CORE (solo funciones modernas)
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    GLFWwindow* window = glfwCreateWindow(800, 800, "Ventana Bonita", NULL, NULL); // Reserva memoria y crea la ventana
 
-    // Crear un objeto GLFWwindow de 800 por 800 píxeles
-    GLFWwindow* window = glfwCreateWindow(800, 800, "YoutubeOpenGL", NULL, NULL);
-
-    // Comprobación de errores por si la ventana falla al crearse
-    if (window == NULL)
+    if (window == NULL) // Finaliza el programa de forma correcta en caso de un error
     {
-        std::cout << "Failed to create GLFW window" << std::endl;
+        std::cout << "Fallo crear GLFW window" << std::endl;
         glfwTerminate();
         return -1;
     }
 
-    // Introducir la ventana en el contexto actual
-    glfwMakeContextCurrent(window);
+    glfwMakeContextCurrent(window); // Indica en qué ventana se va a trabajar
 
-    // Bucle principal (mantiene la ventana abierta hasta que se pulse el botón de cerrar)
-    while (!glfwWindowShouldClose(window))
+    gladLoadGL(); // Carga los punteros de las funciones de OpenGL proporcionados por la GPU
+
+    glViewport(0, 0, 800, 800); // Define el área de la ventana donde OpenGL va a dibujar
+
+    glClearColor(0.6f, 0.1f, 0.8f, 1.0f); // Prepara el color en RGBA de 0 a 1 ; https://rgbcolorpicker.com/0-1
+    glClear(GL_COLOR_BUFFER_BIT); // Limpia la pantalla usando nuestro color
+    glfwSwapBuffers(window); // Hace un cambio entre el lienzo oculto y el visible
+
+    while (!glfwWindowShouldClose(window)) // Este es el ciclo principal, esto mantiene todos los gráficos hasta el cierre de la ventana
     {
-        // Procesa todos los eventos (como redimensionar la ventana o clics)
-        glfwPollEvents();
+        glfwPollEvents(); // Procesa los eventos del sistema operativo (clics, teclas presionadas, mover la ventana)
     }
 
-    // Eliminar la ventana antes de finalizar el programa
+    // Limpia la memoria destruyendo la ventana y terminando los procesos de GLFW
     glfwDestroyWindow(window);
-
-    // Terminar GLFW antes de que acabe la función main
     glfwTerminate();
 
     return 0;
