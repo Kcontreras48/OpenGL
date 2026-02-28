@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Estudiante\\Documents\\Kevin\\OpenGL\\",
+  "WorkspaceRootPath": "C:\\Users\\Windows\\Desktop\\Umng\\computacion\\Computacion Grafia\\Proyect OpneGL\\openGL-1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FCA4FEA2-A9DB-4BFB-A384-51B88B384783}|openGL-1.vcxproj|C:\\Users\\Estudiante\\Documents\\Kevin\\OpenGL\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{FCA4FEA2-A9DB-4BFB-A384-51B88B384783}|openGL-1.vcxproj|C:\\Users\\Windows\\Desktop\\Umng\\computacion\\Computacion Grafia\\Proyect OpneGL\\openGL-1\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FCA4FEA2-A9DB-4BFB-A384-51B88B384783}|openGL-1.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Main.cpp",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Documents\\Kevin\\OpenGL\\Main.cpp",
+              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\Umng\\computacion\\Computacion Grafia\\Proyect OpneGL\\openGL-1\\Main.cpp",
               "RelativeDocumentMoniker": "Main.cpp",
-              "ToolTip": "C:\\Users\\Estudiante\\Documents\\Kevin\\OpenGL\\Main.cpp",
-              "RelativeToolTip": "Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Windows\\Desktop\\Umng\\computacion\\Computacion Grafia\\Proyect OpneGL\\openGL-1\\Main.cpp*",
+              "RelativeToolTip": "Main.cpp*",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAH4AAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-02-12T19:34:26.107Z",
               "EditorCaption": ""
